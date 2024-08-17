@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Encriptador de Texto</title>
+</head>
+<body class="dark-theme">
+  <header>
+    <img src="img/logo.png" alt="logo alura" class="logo">
+    <div class="select_theme">
+      <input type="checkbox" name="" id="btn_theme">
+      <label for="btn_theme" class="content_theme label_button">
+        <p class="check_theme">
+          <i class="control"></i>
+        </p>
+      </label>
+      <label for="btn_theme" class="content_theme label_text">Tema-Oscuro</label>
+    </div>
+  </header>
+
+  <main>
+    <section class="content cifrar" id="cifrar">
+      <textarea name="" id="txt_base" cols="30" rows="10" class="texto base" placeholder="Ingrese el texto aquí"></textarea>
+      <div class="menu_btn">
+        <p class="info"> <span class="advertencia">!</span>Sólo letras minúsuculas y sin acentos</p>
+        <button id="btnCodificar" class="boton codificar">Encriptar</button>
+        <button id="btnDecodificar" class="boton decodificar">Desencriptar</button>
+      </div>
+    </section>
+    <section class="content descifrar">
+      <textarea name="" id="txt_msg" cols="30" rows="10" class="texto mensaje valor"></textarea>
+      <button id="btnCopiar" class="boton copiar">Copyar</button>
+    </section>
+  </main>
+
+  <footer>
+    <p class="autor">AldhairSMify</p>
+  </footer>
+  <script src="script/script.js"></script>
+</body>
+</html>
